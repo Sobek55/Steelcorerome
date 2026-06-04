@@ -1,0 +1,113 @@
+<!-- Randy Nunez -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steel Core Rome - Customer Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-section">
+            <img src="logo.jpeg" alt="Steel Core Rome Logo" class="logo">
+
+            <div>
+                <h1>Steel Core Rome</h1>
+                <p class="tagline">Cards • Community • Competition</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="problem2_contact.html">Contact</a>
+            <a href="problem3_items.html">Shop</a>
+            <a href="customer_form.html">Customer Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-hero">
+            <h2>Customer Intake Form</h2>
+            <p>
+                Use this form to join our customer list, share your favorite games,
+                and tell us what products or events you are interested in.
+            </p>
+        </section>
+
+        <section class="form-section">
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Create Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="favorite-game">Favorite Trading Card Game</label>
+                    <input list="tcg-list" id="favorite-game" name="favorite-game" placeholder="Choose or type a game">
+
+                    <datalist id="tcg-list">
+                        <option value="Pokemon">
+                        <option value="Magic: The Gathering">
+                        <option value="Yu-Gi-Oh!">
+                        <option value="Final Fantasy TCG">
+                        <option value="One Piece Card Game">
+                        <option value="Disney Lorcana">
+                    </datalist>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Main Interest</label>
+                    <select id="interest" name="interest">
+                        <option value="buying">Buying cards</option>
+                        <option value="selling">Selling or trading cards</option>
+                        <option value="events">Playing in events</option>
+                        <option value="collecting">Collecting graded cards</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestion">Suggestions or Product Requests</label>
+                    <textarea id="suggestion" name="suggestion" rows="5" placeholder="Tell us what you want to see in the shop."></textarea>
+                </div>
+
+                <input type="submit" value="Submit Form" class="submit-button">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Steel Core Rome.</p>
+        <p class="student-name">Created by Randy Nunez</p>
+    </footer>
+
+</body>
+
+</html>
