@@ -5,14 +5,15 @@ body {
     font-family: Arial, sans-serif;
     background-color: #111111;
     color: white;
+    line-height: 1.6;
 }
 
 /* HEADER */
 
 header {
     background-color: #2b1240;
-    padding: 20px 40px;
     border-bottom: 3px solid #8a2be2;
+    padding: 20px 40px;
 }
 
 .logo-section {
@@ -32,14 +33,14 @@ h1 {
 }
 
 .tagline {
-    margin: 5px 0 0 0;
+    margin-top: 5px;
     color: #dddddd;
 }
 
 /* NAVIGATION */
 
 nav {
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 nav a {
@@ -47,88 +48,81 @@ nav a {
     text-decoration: none;
     margin-right: 25px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #c084fc;
 }
 
-/* HOME PAGE */
+/* MAIN CONTENT */
 
-.hero {
-    text-align: center;
-    padding: 45px 20px;
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.hero h2 {
+/* HERO */
+
+.hero,
+.contact-hero,
+.shop-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2,
+.contact-hero h2,
+.shop-title h2 {
     color: #c084fc;
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 18px;
-    color: #dddddd;
-}
-
-.site-link a {
-    color: #c084fc;
-}
-
 .hero-image {
-    width: 70%;
-    margin-top: 25px;
+    width: 100%;
+    max-width: 850px;
     border-radius: 12px;
     border: 3px solid #8a2be2;
+    margin-top: 20px;
 }
 
-.video-section {
-    width: 80%;
-    margin: 0 auto 35px auto;
-    text-align: center;
+/* GENERAL CARD STYLING */
+
+.mission,
+.video-section,
+.shop-section,
+.operation-info,
+.category,
+.form-container {
     background-color: #1c1c1c;
     border: 2px solid #8a2be2;
     border-radius: 12px;
     padding: 30px;
+    margin-bottom: 30px;
 }
 
-.video-section h2 {
-    color: #c084fc;
-}
+/* VIDEO */
 
-.video-section p {
-    color: #dddddd;
-    font-size: 17px;
+.video-section {
+    text-align: center;
 }
 
 .video-section iframe {
     width: 100%;
     max-width: 800px;
     height: 450px;
+    border-radius: 12px;
     border: 3px solid #8a2be2;
-    border-radius: 12px;
-    margin-top: 20px;
 }
 
-.mission {
-    width: 80%;
-    margin: 0 auto 35px auto;
-    background-color: #1c1c1c;
-    border: 2px solid #8a2be2;
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.mission h2 {
-    color: #c084fc;
-}
+/* FEATURES */
 
 .features {
-    width: 85%;
-    margin: auto;
     display: flex;
-    gap: 25px;
-    padding-bottom: 40px;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .feature-box {
@@ -136,54 +130,15 @@ nav a:hover {
     background-color: #1c1c1c;
     border-left: 5px solid #8a2be2;
     border-radius: 10px;
-    padding: 25px;
-}
-
-.feature-box h3 {
-    color: #c084fc;
-    margin-top: 0;
+    padding: 20px;
 }
 
 /* CONTACT PAGE */
 
-.contact-hero,
-.shop-title,
-.form-hero {
-    text-align: center;
-    padding: 45px 20px;
-}
-
-.contact-hero h2,
-.shop-title h2,
-.form-hero h2 {
-    color: #c084fc;
-    font-size: 36px;
-}
-
-.contact-hero p,
-.shop-title p,
-.form-hero p {
-    color: #dddddd;
-}
-
 .shop-section {
-    width: 85%;
-    margin: 0 auto 35px auto;
-    background-color: #1c1c1c;
-    border: 2px solid #8a2be2;
-    border-radius: 12px;
-    padding: 30px;
     display: flex;
+    gap: 25px;
     align-items: center;
-    gap: 30px;
-}
-
-.shop-text {
-    flex: 1;
-}
-
-.shop-text h2 {
-    color: #c084fc;
 }
 
 .shop-section img {
@@ -193,8 +148,6 @@ nav a:hover {
 }
 
 .contact-grid {
-    width: 85%;
-    margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
@@ -204,21 +157,17 @@ nav a:hover {
     background-color: #1c1c1c;
     border-left: 5px solid #8a2be2;
     border-radius: 10px;
-    padding: 25px;
-}
-
-.contact-card h3 {
-    color: #c084fc;
-    margin-top: 0;
+    padding: 20px;
 }
 
 .contact-card iframe {
     width: 100%;
     height: 250px;
-    border: 0;
+    border: none;
     border-radius: 10px;
-    margin-top: 15px;
 }
+
+/* TABLES */
 
 .hours-card table {
     width: 100%;
@@ -238,60 +187,34 @@ nav a:hover {
     padding: 10px;
 }
 
-.operation-info {
-    width: 85%;
-    margin: 35px auto;
-    background-color: #1c1c1c;
-    border: 2px solid #8a2be2;
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.operation-info h2 {
-    color: #c084fc;
-}
-
-/* SHOP PAGE */
+/* SHOP PAGE FLEXBOX */
 
 .product-columns {
-    width: 90%;
-    margin: auto;
     display: flex;
-    gap: 25px;
-    align-items: flex-start;
+    gap: 20px;
 }
 
 .category {
     flex: 1;
-    background-color: #1c1c1c;
-    border: 2px solid #8a2be2;
-    border-radius: 12px;
-    padding: 25px;
 }
 
 .category h3 {
     color: #c084fc;
-    font-size: 22px;
-    margin-top: 0;
-    border-bottom: 2px solid #8a2be2;
-    padding-bottom: 12px;
 }
 
 .category ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .category li {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-left: 5px solid #8a2be2;
+    margin-top: 12px;
+    padding: 12px;
     background-color: #151515;
-    margin-top: 15px;
-    padding: 14px 16px;
-    border-radius: 10px;
+    border-left: 5px solid #8a2be2;
+    border-radius: 8px;
 }
 
 .price {
@@ -299,68 +222,49 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* CUSTOMER FORM PAGE */
+/* FORM PAGE */
 
-.form-section {
-    width: 70%;
-    margin: 0 auto 40px auto;
-    background-color: #1c1c1c;
-    border: 2px solid #8a2be2;
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.form-row {
-    display: flex;
-    gap: 20px;
-}
-
-.form-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 18px;
+.form-container {
+    max-width: 800px;
+    margin: auto;
 }
 
 label {
-    color: #c084fc;
-    font-weight: bold;
-    margin-bottom: 8px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 input,
 select,
 textarea {
-    padding: 12px;
-    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
     border: 1px solid #8a2be2;
-    background-color: #111111;
-    color: white;
-    font-size: 15px;
+    box-sizing: border-box;
 }
 
-.submit-button {
+input[type="submit"] {
     background-color: #8a2be2;
     color: white;
-    font-weight: bold;
-    cursor: pointer;
     border: none;
-    width: 180px;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
-.submit-button:hover {
-    background-color: #c084fc;
-    color: #111111;
+input[type="submit"]:hover {
+    background-color: #6d1ed4;
 }
 
 /* FOOTER */
 
 footer {
     background-color: #2b1240;
+    border-top: 3px solid #8a2be2;
     text-align: center;
     padding: 15px;
     margin-top: 40px;
-    border-top: 3px solid #8a2be2;
 }
 
 .student-name {
@@ -370,31 +274,11 @@ footer {
 
 /* RESPONSIVE DESIGN */
 
-@media screen and (max-width: 800px) {
-    header {
-        padding: 20px;
-    }
-
-    .logo-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
-    }
-
-    .hero-image,
-    .shop-section img {
-        width: 100%;
-    }
+@media screen and (max-width: 768px) {
 
     .features,
-    .shop-section,
     .product-columns,
-    .form-row {
+    .shop-section {
         flex-direction: column;
     }
 
@@ -402,15 +286,20 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .mission,
-    .video-section,
-    .shop-section,
-    .operation-info,
-    .form-section {
-        width: 85%;
+    .shop-section img {
+        width: 100%;
     }
 
     .video-section iframe {
         height: 250px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
     }
 }
