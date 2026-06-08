@@ -1,27 +1,35 @@
 const customers = [];
 
-document.getElementById("customerForm").addEventListener("submit", function (event) {
+document.addEventListener("DOMContentLoaded", function () {
 
-    event.preventDefault();
+    const form = document.getElementById("customerForm");
 
-    const customer = {
+    form.addEventListener("submit", function (event) {
 
-        id: Date.now(),
+        event.preventDefault();
 
-        name: document.getElementById("name").value,
+        const customer = {
 
-        email: document.getElementById("email").value,
+            id: Date.now(),
 
-        password: document.getElementById("password").value,
+            name: document.getElementById("name").value,
 
-        favoriteGame: document.getElementById("favoriteGame").value
+            email: document.getElementById("email").value,
 
-    };
+            password: document.getElementById("password").value,
 
-    customers.push(customer);
+            favoriteGame: document.getElementById("favoriteGame").value
 
-    console.clear();
+        };
 
-    console.log(customers);
+        customers.push(customer);
+
+        console.clear();
+
+        console.log(customers);
+
+        form.reset();
+
+    });
 
 });
