@@ -12,6 +12,7 @@
 <body>
 
     <header>
+
         <div class="logo-section">
             <img src="logo.jpeg" alt="Steel Core Rome Logo" class="logo">
 
@@ -27,87 +28,61 @@
             <a href="problem3_items.html">Shop</a>
             <a href="customer_form.html">Customer Form</a>
         </nav>
+
     </header>
 
     <main>
-        <section class="form-hero">
-            <h2>Customer Intake Form</h2>
+
+        <section class="form-container">
+
+            <h2>Customer Registration Form</h2>
+
             <p>
-                Use this form to join our customer list, share your favorite games,
-                and tell us what products or events you are interested in.
+                Fill out the information below to join the Steel Core Rome community.
             </p>
-        </section>
 
-        <section class="form-section">
-            <form action="#" method="post">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
+            <form id="customerForm">
 
-                    <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </div>
-                </div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
 
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone">
-                    </div>
-                </div>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
 
-                <div class="form-group">
-                    <label for="password">Create Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
+                <label for="favoriteGame">Favorite Trading Card Game</label>
 
-                <div class="form-group">
-                    <label for="favorite-game">Favorite Trading Card Game</label>
-                    <input list="tcg-list" id="favorite-game" name="favorite-game" placeholder="Choose or type a game">
+                <input list="games" id="favoriteGame">
 
-                    <datalist id="tcg-list">
-                        <option value="Pokemon">
-                        <option value="Magic: The Gathering">
-                        <option value="Yu-Gi-Oh!">
-                        <option value="Final Fantasy TCG">
-                        <option value="One Piece Card Game">
-                        <option value="Disney Lorcana">
-                    </datalist>
-                </div>
+                <datalist id="games">
+                    <option value="Pokemon">
+                    <option value="Magic: The Gathering">
+                    <option value="Yu-Gi-Oh!">
+                    <option value="One Piece">
+                    <option value="Disney Lorcana">
+                </datalist>
 
-                <div class="form-group">
-                    <label for="interest">Main Interest</label>
-                    <select id="interest" name="interest">
-                        <option value="buying">Buying cards</option>
-                        <option value="selling">Selling or trading cards</option>
-                        <option value="events">Playing in events</option>
-                        <option value="collecting">Collecting graded cards</option>
-                    </select>
-                </div>
+                <input type="submit" value="Submit Registration">
 
-                <div class="form-group">
-                    <label for="suggestion">Suggestions or Product Requests</label>
-                    <textarea id="suggestion" name="suggestion" rows="5" placeholder="Tell us what you want to see in the shop."></textarea>
-                </div>
-
-                <input type="submit" value="Submit Form" class="submit-button">
             </form>
+
         </section>
+
     </main>
 
     <footer>
+
         <p>&copy; 2026 Steel Core Rome.</p>
-        <p class="student-name">Created by Randy Nunez</p>
+
+        <p class="student-name">
+            Created by Randy Nunez
+        </p>
+
     </footer>
 
-</body>
+    <script src="Script.js"></script>
 
+</body>
 </html>
