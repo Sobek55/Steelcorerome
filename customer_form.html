@@ -11,78 +11,82 @@
 
 <body>
 
-    <header>
+<header>
 
-        <div class="logo-section">
-            <img src="logo.jpeg" alt="Steel Core Rome Logo" class="logo">
+    <div class="logo-section">
 
-            <div>
-                <h1>Steel Core Rome</h1>
-                <p class="tagline">Cards • Community • Competition</p>
-            </div>
+        <img src="logo.jpeg" alt="Steel Core Rome Logo" class="logo">
+
+        <div>
+            <h1>Steel Core Rome</h1>
+            <p class="tagline">Cards • Community • Competition</p>
         </div>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="problem2_contact.html">Contact</a>
-            <a href="problem3_items.html">Shop</a>
-            <a href="customer_form.html">Customer Form</a>
-        </nav>
+    </div>
 
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="problem2_contact.html">Contact</a>
+        <a href="problem3_items.html">Shop</a>
+        <a href="customer_form.html">Customer Form</a>
+    </nav>
 
-    <main>
+</header>
 
-        <section class="form-container">
+<main>
 
-            <h2>Customer Registration Form</h2>
+    <section class="form-container">
 
-            <p>
-                Fill out the information below to join the Steel Core Rome community.
-            </p>
+        <h2>Customer Registration</h2>
 
-            <form id="customerForm">
-
-                <label for="name">Full Name</label>
-                <input type="text" id="name" required>
-
-                <label for="email">Email Address</label>
-                <input type="email" id="email" required>
-
-                <label for="password">Password</label>
-                <input type="password" id="password" required>
-
-                <label for="favoriteGame">Favorite Trading Card Game</label>
-
-                <input list="games" id="favoriteGame">
-
-                <datalist id="games">
-                    <option value="Pokemon">
-                    <option value="Magic: The Gathering">
-                    <option value="Yu-Gi-Oh!">
-                    <option value="One Piece">
-                    <option value="Disney Lorcana">
-                </datalist>
-
-                <input type="submit" value="Submit Registration">
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>&copy; 2026 Steel Core Rome.</p>
-
-        <p class="student-name">
-            Created by Randy Nunez
+        <p>
+            Register to receive event updates and store announcements.
         </p>
 
-    </footer>
+        <!-- IMPORTANT: No action and no method -->
 
-    <script src="Script.js"></script>
+        <form id="customerForm">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+
+            <label for="favoriteGame">Favorite Trading Card Game</label>
+
+            <input list="games" id="favoriteGame">
+
+            <datalist id="games">
+                <option value="Pokemon">
+                <option value="Magic: The Gathering">
+                <option value="Yu-Gi-Oh!">
+                <option value="One Piece">
+                <option value="Disney Lorcana">
+            </datalist>
+
+            <input type="submit" value="Submit Registration">
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 Steel Core Rome</p>
+
+    <p class="student-name">
+        Created by Randy Nunez
+    </p>
+
+</footer>
+
+<script src="Script.js"></script>
 
 </body>
 </html>
